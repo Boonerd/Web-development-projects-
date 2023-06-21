@@ -1,0 +1,16 @@
+
+
+/* Select the link and define its default styles */
+a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* Add the hover effect */
+  img:hover {
+    width: 50%;
+    color: black;
+  }
+body {
+    background-color: brown;
+}  
