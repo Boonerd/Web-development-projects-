@@ -8,20 +8,45 @@
     <link rel="stylesheet"href="Style.css">
 </head>
 <body>
-    <a href="Kapi.reads.html">Kapireads</a>
-    <a href="Booksread.html">Books read</a>
-	<a href="TBR LIst.html">TBR List</a>
-	<a href="signup.html">Signup</a>
+	<nav>
+		<ul>
+		  <li><a href="signup.html">Signup</a></li>
+		  <li><a href="home.html">Home</a></li>
+		  <li><a href="mybooks.html">My books</a></li>
+		  <li><a href="Browse.html">Browse</a></li>
+		</ul>
+	  </nav>
 <form> 
-	<label for=name>Name</label>
-	<input type="text" id="name"name=" name" required>
-	<label for=email>email</label>
-	<input type="email" id="email" name="email" required>
+	<label for= "First name">First Name</label>
+	<input type="text" id="First name"name="First name" required><br>
+	<label for= "Last name">Last Name</label>
+	<input type="text" id="Last name"name="Last name" required><br>
+	<label for=email>Email</label>
+	<input type="email" id="email" name="Email" required><br>
 	<label for=age>Age</label>
-	<input type="number"id="age" name="Age">
+	<input type="number"id="age" name="Age"><br>
 	<label for gender>Gender</label>
-	<input type="checkbox"id="gender" name="gender" >
+	<input type="checkbox" id="maleCheckbox">
+    <label for="maleCheckbox">Male</label>
+
+    <input type="checkbox" id="femaleCheckbox">
+    <label for="femaleCheckbox">Female</label><br>
+	<input type="radio" id="option1" name="radioOptions" value="Fiction">
+	<label for="Fiction books">Fiction</label>
+	
+	<input type="radio" id="option2" name="radioOptions" value="Nonfiction">
+	<label for="Nonfiction books">Non fiction</label>
+	
+	<input type="radio" id="option3" name="radioOptions" value="Starter">
+	<label for="option3">Beginner reader</label><br>
+	<input type="checkbox" id="e-booksCheckbox">
+    <label for="e-booksCheckbox">E-books</label>
+
+<input type="checkbox" id="hardcopyCheckbox">
+<label for="hardcopyCheckbox">Hard copy</label><br>
+
 	<input type="submit" value="Submit">
+
 </form>
 <p> Hello,welcome to Kapi reads website.This is an webpage to allow you to track my reading and my favorite books.This will help you get an idea of what to read as you start this fantsatic jounney.Bienvenue!First kindly select your preferred Genre(s)</p>
 <select>
@@ -29,6 +54,7 @@
 	<option value="Young adult fiction">Young Adult</option>
 	<option value="Fantasy">Fantasy</option>
 	<option value="Romance">Romance</option>
+   <option value="Science Fiction">SciFi</option>
 </select>
 </body>
 </html>

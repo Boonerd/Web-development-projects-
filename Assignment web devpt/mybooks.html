@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+      }
+
+      .container img {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+      }
+
+      .container .progressBar {
+        flex-grow: 1;
+      }
+    </style>
+    <script>
+      function updateProgress(progressBarId) {
+        var progressBar = document.getElementById(progressBarId);
+        var newValue = parseInt(progressBar.value) + 10; // Increase the progress value by 10
+        progressBar.value = newValue > 100 ? 100 : newValue; // Limit the value to the maximum of 100
+      }
+    </script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="signup.html">Signup</a></li>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="mybooks.html">My books</a></li>
+      <li><a href="Browse.html">Browse</a></li>
+    </ul>
+  </nav>
+  
+  <div class="container">
+    <img src="Persuasion.png" alt="Persuasion"><br><br>
+    <div class="progressBar">
+      <h3>Persuasion</h3>
+      <p>by Jane Austen</p>
+      <progress id="progress1" value="0" max="100"></progress>
+      <button onclick="updateProgress('progress1')">Update Progress</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <img src="NormalPeople.jpg" alt="Normal People">
+    <div class="progressBar">
+      <h3>Normal People</h3>
+      <p>by Sally Rooney</p>
+      <progress id="progress2" value="0" max="100"></progress>
+      <button onclick="updateProgress('progress2')">Update Progress</button>
+    </div>
+  </div>
+  <div class="container">
+    <img src="The Great Gatsby.jpg" alt="The Great Gatsby">
+  <div class="progressBar">
+      <h3>The Great Gatsby</h3>
+  <div class="Currently reading">
+       <h4>Currently Reading</h4> 
+  </div>
+        <progress id="progress3" value="30" max="100"></progress>
+        <button onclick="updateProgress('progress3')">Update Progress</button>
+  </div>
+  </div>
+  </div>
+  
+  <div class="container">
+    <img src="little women.jpg" alt="Little women">
+    <div class="progressBar">
+      <h3>Little women</h3>
+        <progress id="progress4" value="0" max="100"></progress>
+        <button onclick="updateProgress('progress4')">Update Progress</button>
+
+  </div>
+  
+</body>
+</html>
