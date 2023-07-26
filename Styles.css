@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+* {
+    background-color:rgb(235, 235, 231)
+}
+.gif-container {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+ 
+}
+
+.Links {
+    width: 100%;
+    margin: 25px 25px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  color: rgb(27, 25, 25);
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: justify;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+
+p {
+    font-family: 'Roboto', serif;
+    font-size: 15px;
+    font-stretch: expanded 1px;
+    text-align: justify;
+    color: black;
+}
+nav {
+  background-color: teal;
+  border:solid 5px rgb(0, 0, 17);
+  border-style: groove;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: justify /* Center the navigation links horizontally */
+}
+
+nav li {
+  margin: 0 10px; /* Add some space between the navigation links */
+}
+
+nav li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+nav li a:hover {
+  background-color: rgb(20, 20, 146);
+  color: rgb(184, 184, 165);
+}
+
+.nav-Links{
+  float: right;
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+}
+.nav-link{
+  list-style:none;
+  text-align: justify;
+  font-size: 18px;
+  font-style:normal ;
+}
+.pretext {
+    text-align: justify;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+    width: 100px; /* Adjust the desired width */
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.forms {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:rgb(35, 82, 82);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forms label {
+  font-weight: bold;
+}
+
+.forms input[type="text"],
+.forms input[type="email"],
+.forms input[type="number"],
+.forms input[type="password"] {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forms select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forms button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.forms button[type="submit"]:hover {
+  background-color: #555;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="checkbox"],
+input[type="radio"] {
+    display: block;
+    margin-bottom: 10px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.Table {
+    text-align: center;
+    table-layout: fixed;
+    border: 5px solid black;
+}
+
+#progressBar {
+    width: 300px;
+    height: 20px; 
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.container .content {
+    flex-grow: 1;
+}
+
+h4 {
+    font-size: 15px;
+    color: rgb(20, 11, 11);
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.book {
+    flex-basis: 19%;
+    margin-bottom: 20px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed to center the image within the viewport */
+}
